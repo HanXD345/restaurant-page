@@ -1,17 +1,25 @@
+/* General Styles */
 * {
     padding: 0;
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
 
+/* Header Styles */
 header {
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     justify-content: space-between;
     background-color: rgb(218, 218, 196);
     padding: 20px;
 }
 
-.title {
+.title,
+.section-header {
     font-size: 25px;
 }
 
@@ -33,4 +41,41 @@ nav > button:hover {
     color: black;
     transition: 0.5s;
     cursor: pointer;
+}
+
+/* Main (body) styles */
+
+main {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 100px 50px;
+    border-radius: 10px;
+}
+
+.about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 100px 0px;
+    color: black;
+}
+
+.about::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("https://www.georgeinstitute.org/sites/default/files/styles/image_ratio_2_1_large/public/2020-10/world-food-day-2020.png.webp?itok=-h1y_Rz0");
+    background-size: cover;
+    border-radius: 10px;
+    opacity: 0.5;
+    z-index: -1;
 }
