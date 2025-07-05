@@ -21,6 +21,7 @@ header {
 .title,
 .section-header {
     font-size: 25px;
+    margin-bottom: 10px;
 }
 
 nav {
@@ -61,7 +62,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     padding: 100px 0px;
     color: black;
 }
@@ -78,4 +78,21 @@ main {
     border-radius: 10px;
     opacity: 0.5;
     z-index: -1;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid gray;
+    border-top: 10px solid tan;
+    color: black;
+    display: grid;
+    justify-items: center;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
 }
