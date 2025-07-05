@@ -1,1 +1,3 @@
-console.log("Hello, world! Reload Please Onegai")
+import './styles.css';
+
+console.log("Hello, world! Reload Please Onegai");
